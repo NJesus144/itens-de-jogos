@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>cadastro</title>
+    
+   <!-- <link rel="stylesheet" href="project.css"> -->
+   <link rel="stylesheet" href="normalize.css">
+
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+  
+  body{
+     
+      background-image: url(https://cdn.mos.cms.futurecdn.net/UdFTucNhzog2Tdky3DHsYf.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+  </style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<i class="fa fa-eye" id= "fa-eye" aria-hidden="true"></i>
+<i class="fa fa-eye" id= "eye" aria-hidden="true"></i>
+</head>
+
+
+<body>
+  <form class="myForm">
+    <input type="text" id="validUsuario" required>
+<span id= "labelUsuario">Usuário</span>
+
+<input type="text" id="validarSenha" required>
+<span id= "labelSenha">Senha</span>
+
+<input type="text" id="confirma">
+<span id= "spanConfirma">Confirme Senha</span>
+
+
+<div id="msg"></div>
+<div id="msgSuccess"></div>
+
+<input   type="text"   id ="btnID" required> 
+
+<input type="email"  id="email" required>
+<span id= "spanEmail">Email</span>
+
+<input id="submit-button" class="btn" type = "submit" value="CRIAR CONTA" />
+  </form>
+
+
+<!-- 
+    <button id="myButton">Pesquids Google</button> -->
+ <div id= "app"></div>  
+
+ 
+     <script src = "cadastro.js"></script> 
+
+</body>
+</html>

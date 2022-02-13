@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="normalize.css">
+ 
+<style>
+  /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); */
+
+/*   
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+</style>
+
+
+
+
+</head>
+<body>
+  <div id="login"  onclick="login()">Entrar</div>
+  <div id="ola"></div>
+  <a onclick='sair()' id="sair" style="cursor: pointer; display: flex; margin-left: 30px; " >Sair</a>
+
+  <div id="msg"></div>
+<div id="msgSuccess"></div>
+  <!-- <button id="btnBuy"></button> -->
+   <button onclick='login()' id="in">ACESSAR CONTA</button>
+  <button onclick='cadastrar()' id="cadastrar">CRIAR UMA CONTA</button> 
+ <!-- <button id="btnCompra"></button> -->
+   <button  id="confirm"  style="color: #03022B; height: 40px; border-Radius: 5px; font-family: Arial, Helvetica, sans-serif;">Confirmar</button>
+  <button  id="cancel" onclick="cancelar()"style="color: #03022B; height: 40px; border-Radius: 5px; font-family: Arial, Helvetica, sans-serif;">Cancelar</button>
+   <div id ="all"></div>
+ <div id = "filter-btn-box">
+   <button class="main-btn filter-btn active" onclick="sup(this)" id="all-btn">Todos</button>
+   <button class="main-btn filter-btn" onclick="sup(this)" id="mitic-btn">Mítico</button>
+   <button class="main-btn filter-btn" onclick="sup(this)" id="legendary-btn">Lendário</button>
+   <button class="main-btn filter-btn" onclick="sup(this)"   id="epic-btn">Épico</button>
+   <button class="main-btn filter-btn"  onclick="sup(this)" id="rare-btn">Raro</button>
+   <button class="main-btn filter-btn"onclick="sup(this)"  id="commum-btn">Comum</button>
+ </div>
+ <div class="project-box mitic" id="miticContainer"></div>
+ <div class="project-box legendary" id="LegendContainer"></div>
+ <div class="project-box epic" id="epicContaniner"></div>
+ <div class="project-box epic" id="rareContainer"></div>
+ <div class="project-box epic" id="commumContainer"></div>
+
+<div id="wallet"></div>
+
+ <div id="dsc"></div>
+ 
+  <div id= "app" style="background-Image: radial-gradient(circle at 77.39% 34.18%, #ffffff 0, #f7ffff 16.67%, #edffff 33.33%, #e2eeee 50%, #d7d3d3 66.67%, #ccbcba 83.33%, #c2a8a2 100%); overflow: auto;"></div>
+ 
+
+  <script src = "project2.js"></script>
+ 
+
+   
+</body>
+</html>

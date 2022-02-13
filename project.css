@@ -1,0 +1,226 @@
+
+.weapons-card{
+    width: 248px;
+    height: 319px;
+    background: rgb(2,0,36);   
+    color: white;
+   border: 2px solid rgb(49, 6, 128);
+   background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(119,26,212,1) 85%); ;  
+   margin: 30px;
+  }
+
+
+  
+
+.weapons-card-header{
+  font-weight: bold; 
+  margin: 5px;
+  text-align: center;
+  font-size: 20px;  
+}
+
+
+
+.weapons-card-img{
+   max-width: 189px;
+   max-height: 111px; 
+   margin-left: 90px;
+   border: 2px solid white;
+   
+  }
+
+ 
+
+
+  .weapons-card-container {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "weapons-card-l1 weapons-card-v1"
+      "weapons-card-l2 weapons-card-v2"
+      "weapons-card-l3 weapons-card-v3"
+      "weapons-card-l4 weapons-card-v4"
+      "weapons-card-l5 weapons-card-v5";
+      text-align: center;
+      font-size: 20px;
+  }
+
+ 
+  .weapons-card-l1 { grid-area: weapons-card-l1; } 
+   .weapons-card-v1 { grid-area: weapons-card-v1; }
+  .weapons-card-l2 { grid-area: weapons-card-l2; }
+  .weapons-card-v2 { grid-area: weapons-card-v2; } 
+  .weapons-card-l3 { grid-area: weapons-card-l3; }
+  .weapons-card-v3 { grid-area: weapons-card-v3; } 
+  .weapons-card-l4 { grid-area: weapons-card-l4; }   
+   .weapons-card-v4 { grid-area: weapons-card-v4; }
+ 
+
+
+  .weapons-card-btn {
+    Width : 136px;
+    Height: 36px;
+    border-radius:10px;
+    margin-left: 50px;
+    margin-top: 35px;
+  }
+
+  
+
+  /* ####### MITIC CARD ###### */
+
+  .mitic-card{
+    width: 248px;
+    height: 319px;
+    /* top: 101px;
+    left: 385px;  */
+    background: rgb(2,0,36);   
+    color: white;
+    background: rgb(252,176,69);
+    background: linear-gradient(90deg, rgba(252,176,69,1) 8%, rgba(131,58,180,1) 60%, rgba(253,92,29,0.9668242296918768) 100%);
+   margin: 30px;
+   border: 3px solid black;
+   box-shadow: 1px 1px 5px  black;
+   border-radius: 10px;
+  position: relative;
+   
+   
+  }
+
+  .mitic-card-header{
+    font-weight: bold; 
+    margin: 5px;
+    text-align: center;
+    font-size: 20px;  
+    text-shadow: 2px 2px 5px black;
+  }
+  
+  .mitic-card-img{
+    max-width: 189px; 
+   max-height: 111px; 
+   margin-left: 90px;
+   border: 2px solid white;
+    
+  }
+.mitic-card-img2{
+   max-width: 34px;
+   max-height: 30px; 
+   position: absolute;
+   margin-top: 211px;
+   margin-left: 40px; 
+   border: 1px solid black;
+   box-shadow: 1px 1px 5px black;
+   border-radius: 5px;
+   
+  }
+.mitic-card-img3{
+   max-width: 34px;
+   max-height: 30px; 
+   position: absolute;
+   margin-top: 211px;
+   margin-left: 100px; 
+
+   box-shadow: 1px 1px 5px black;
+   border-radius: 5px;
+   border: 1px solid black;
+  }
+.mitic-card-img4{
+   max-width: 34px;
+   max-height: 30px; 
+   position: absolute;
+   margin-top: 211px;
+   margin-left: 160px; 
+
+   box-shadow: 1px 1px 5px black;
+   border-radius: 5px;
+   border: 1px solid black;
+  
+  }
+
+  .mitic-card-container {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "mitic-card-l1 mitic-card-v1"
+      "mitic-card-l2 mitic-card-v2"
+      "mitic-card-l3 mitic-card-v3"
+      "mitic-card-l4 mitic-card-v4"
+      "mitic-card-l5 mitic-card-v5"; 
+      text-align: center;
+      font-size: 20px;
+  }
+
+  .mitic-card-l1 { grid-area: mitic-card-l1;text-shadow: 2px 2px 5px black; }
+  .mitic-card-v1 { grid-area: mitic-card-v1;
+                    color: #fd5c1d;  
+                  font-weight: bold;
+                  text-shadow: 2px 2px 5px black;}
+  .mitic-card-l2 { grid-area: mitic-card-l2;text-shadow: 2px 2px 5px black; }
+  .mitic-card-v2 { grid-area: mitic-card-v2;text-shadow: 2px 2px 5px black; } 
+  .mitic-card-l3 { grid-area: mitic-card-l3;text-shadow: 2px 2px 5px black; }
+  .mitic-card-v3 { grid-area: mitic-card-v3;text-shadow: 2px 2px 5px black; } 
+  .mitic-card-l4 { grid-area: mitic-card-l4;text-shadow: 2px 2px 5px black; }  
+  .mitic-card-v4 { grid-area: mitic-card-v4;text-shadow: 2px 2px 5px black; }
+ 
+
+    .mitic-card-btn {
+    Width : 136px;
+    Height: 36px;
+    border-radius:10px;
+    margin-left: 50px;
+    margin-top: 35px;
+    box-shadow: 1px 1px 5px black;
+    
+  }
+  
+.active{
+  color:"red";
+  background-color: blueviolet;
+}
+
+
+ /* BOTOES FILTRO */
+
+#filter-btn-box {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.filter-btn{
+  color: #444;
+  border: 1px solid #444;
+  background-color: transparent;
+  text-transform: none;
+  margin: 0 15px;
+  padding: 0 10px;  
+ 
+}
+
+
+.filter-btn.active, .filter-btn:hover{
+  color:#42889b;
+  background-color:  #65daf9;
+  border-color: #65daf9;
+  cursor: pointer;
+}
+
+
+.main-btn{
+  background-Image: radial-gradient(circle at 77.39% 34.18%, #ffffff 0, #f7ffff 16.67%, #edffff 33.33%, #e2eeee 50%, #d7d3d3 66.67%, #ccbcba 83.33%, #c2a8a2 100%); overflow: auto;
+  transition: .15s;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+
+
+
+.filter-btn-box {
+  align-items: center;
+  display: flex;
+}
