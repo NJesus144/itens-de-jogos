@@ -12,7 +12,7 @@
 
 # Sobre
 
-<p>O usuário vincula sua conta do jogo na hora do casdastro através do seu ID, assim cada item que ele compra, uma cópia é enviada automaticamente para o seu inventário no jogo.</p>
+<p>O usuário vincula sua conta do jogo na hora do cadastro através do seu ID, assim cada item que ele compra, uma cópia é enviada automaticamente para o seu inventário no jogo.</p>
 <p>Ao tentar comprar sem estar logado, um modal é exibido com 2 botões redirecionando o usuário para criar uma conta ou para fazer o login</p>
 
 <p align="center">
@@ -35,6 +35,10 @@ Após o cadastro o usuário efetua o login e a página principal recebe o usuár
 
 
 # Tecnologias
-• <a href="#sobre">Sobre</a> 
-• <a href="#login">Login</a> 
-• <a href="#cadastro">Cadastro</a> 
+<p>• <a href="#">Html</a></p> 
+<p>• <a href="#">CSS</a> </p> 
+<p>• <a href="#">JavaScript</a> </p> 
+
+# Autor
+
+<p>Nalbert de Jesus </p>
