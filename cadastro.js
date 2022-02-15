@@ -74,7 +74,7 @@ submitButton.addEventListener('click', (e) => {
         
         
         setTimeout(()=>{
-            window.location.href = "http://127.0.0.1:5500/projeto.html"
+            window.location.href = "http://127.0.0.1:5501/login.html"
         }, 3000)
       
        

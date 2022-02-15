@@ -48,7 +48,7 @@ function entrar(){
       }
   })
     if(usuario.value == userValid.user && senha.value == userValid.senha && usuario.value !== '' && senha.value !== ''){
-        window.location.href = 'http://127.0.0.1:5500/project2.html'
+        window.location.href = 'http://127.0.0.1:5501/project2.html'
     
      localStorage.setItem('userLogado', JSON.stringify(userValid))
     }else {
