@@ -35,9 +35,9 @@ Após o cadastro o usuário efetua o login e a página principal recebe o usuár
 
 
 # Tecnologias
-<p>• <a href="#">Html</a></p> 
+<p>• <a href="#">HTML5</a></p> 
 <p>• <a href="#">CSS</a> </p> 
-<p>• <a href="#">JavaScript</a> </p> 
+<p>• <a href="#">Javascript</a> </p> 
 
 # Autor
 
