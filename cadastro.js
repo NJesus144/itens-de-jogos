@@ -16,10 +16,10 @@ let labelSenha = document.querySelector('#labelSenha')
     }
  })
 
-// ######## CONFIRMAR SENHA ########
+
  let confirmSenha= document.querySelector('#confirma')
  let spanConfirma = document.querySelector('#spanConfirma')
- //let validspanConfirmSenha = false
+
 
       confirmSenha.addEventListener('keyup', ()=> {
       if(senha.value != confirmSenha.value){
@@ -32,7 +32,7 @@ let labelSenha = document.querySelector('#labelSenha')
       }
   })
 
-//   ##### VALIDANDO CADASTRO ######
+
 const usuarioInput = document.querySelector("#validUsuario");
 const senhaInput = document.querySelector("#validarSenha");
 const confirmInput = document.querySelector("#confirma");
@@ -190,7 +190,7 @@ const App = {
           
        
        
-//   ##### SENHA #######
+
         
 App.helpers.style(body.container.campoSenha.spanSenha, 
     {
@@ -222,7 +222,7 @@ App.helpers.style(body.container.campoSenha.spanSenha,
             
             })
 
-            // body.container.campoSenha.senha.id = "validacao"
+           
             body.container.campoSenha.senha.id = "senha"
             body.container.campoSenha.senha.type = "password"
      
