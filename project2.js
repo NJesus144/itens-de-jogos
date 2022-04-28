@@ -1,18 +1,16 @@
-// FUNCA ONLCIK QUE TE DIRECIONA PARA O LOGIN CASO NÃO ESTEJA LOGADO
+
 function login() {
   window.location.href = "http://127.0.0.1:5501/login.html";
 }
-// ARMAZENEI OS DADOS DO USUARIO CADASTRADO EM VARIAVEIS
+
 let storageKey = JSON.parse(localStorage.getItem("storageKey"));
 let userLogado = JSON.parse(localStorage.getItem("userLogado"));
 let userCad = JSON.parse(localStorage.getItem("listaUser.userCad"));
 
-// FAÇO UM IF PARA CONFIRMAR SE O USUARIO ESTA LOGADO OU NÃO, CASO ESTEJA,
-//O BOTÃO DE 'ENTRAR' ENTRA EM DISPLAY NONE E A DIV OLA SUBSTITUI O BOTAO 'ENTRAR' COM A MENSAGEM DE 'OLÁ' + O 'USUARIO LOGADO'.
-// NO ELSE CASO O USUARIO NÃO ESTEJA LOGADO O LINK PARA 'ENTRAR' VOLTA E O BOTAO 'SAIR' RECEBE DISPLAY NONE PARA FICAR ESCONDIDO.
-let ola = document.querySelector("#ola"); //<-- DIV
-let logado = document.querySelector("#login"); //<--- LINK PARA O LOGIN
-let deslogar = document.querySelector("#sair"); //<--- LINK PARA SAIR
+
+let ola = document.querySelector("#ola"); 
+let logado = document.querySelector("#login");
+let deslogar = document.querySelector("#sair");
 if (userLogado != userCad) {
   logado.setAttribute("style", "display: none");
   ola.innerHTML = "Olá " + userLogado.user;
@@ -21,7 +19,7 @@ if (userLogado != userCad) {
   deslogar.setAttribute("style", "display: none");
 }
 
-// FUNÇÃO SAIR QUE REMOVE O USUARIO LOGADO
+
 function sair() {
   let deslogar = document.querySelector("#sair");
   localStorage.removeItem("userLogado");
@@ -32,14 +30,13 @@ function sair() {
   window.location.reload();
 }
 
-//ESSA FUNÇÃO TIVE DIFICULDADE PARA ENTENDER, ENCONTREI NA INTERNET E ELA ME DEU O RESULTADO QUE EU QUERIA.
-//ELA DEIXA ATIVO O BOTÃO DO FILTRO QUE EU CLICAR.
+
 function sup(clicado) {
   const clicaveis = document.querySelectorAll(".main-btn");
   clicaveis.forEach((el) => el.classList.toggle("active", el === clicado));
 }
 
-//FUNÇÃO PARA CANCELAR A COMPRA
+
 function cancelar() {
   let cancelar = document.querySelector("#cancel");
   if (cancelar) {
@@ -47,7 +44,7 @@ function cancelar() {
   }
 }
 
-//LINK PARA CADASTRO
+
 function cadastrar() {
   window.location.href = "http://127.0.0.1:5501/cadastro.html";
 }
@@ -260,7 +257,7 @@ const App = {
     },
 
     showPopup() {
-      //POPUP DESCRIÇÃO DAS SKILLS
+ 
       App.elements.popupEspada.backdrop.style.display = "flex";
       App.elements.popupEspada.container.description.innerHTML =
         "Seus golpes causam dano de fogo em area, aplicando queimadura nos inimigos ao seu redor. Queimadura causa 5% de dano baseado na vida máxima dos alvos ao longo de 5seg. Queimadura aculma até 3 vezes. Se espírito do imperador estiver ativo, queimaduras acumulam-se até 6 vezes.";
@@ -274,7 +271,7 @@ const App = {
       });
     },
     showPopup2() {
-      //POPUP DESCRIÇÃO DAS SKILLS
+     
       App.elements.popupEspada.backdrop.style.display = "flex";
       App.elements.popupEspada.container.description.innerHTML =
         "Com menos de 30% de vida o espírito do imperador envolve o portador da espada concedendo a ele 100 de força e destreza e 50 de velocidade de ataque. Além disso, dois de cada três ataques terão 100% de chance de crítico. Inimigos com menos de 15% de vida morrerão instantaneamente se receberem um ataque enquanto espírito do imperador estiver ativado.";
@@ -288,7 +285,7 @@ const App = {
       });
     },
     showPopup3() {
-      //POPUP DESCRIÇÃO DAS SKILLS
+     
       App.elements.popupEspada.backdrop.style.display = "flex";
       App.elements.popupEspada.container.description.innerHTML =
         "Seus ataques ignoram 20% da armadura inimiga e seus ataques causam 80% de dano a mais contra escudos. Se espírito do imperador estiver ativo, 30% do dano causado é convertido em escudo até um máximo de 40% da sua vida total. E se apenas o seu escudo exceder 30% da sua vida total espírito do imperador não é desativado.";
@@ -573,7 +570,7 @@ const App = {
         let userLogado = JSON.parse(localStorage.getItem("userLogado"));
         let logado = document.querySelector("#login");
 
-        // A CARTEIRA DO USUARIO FICA ESCONDIDA  E SÓ APARECE QUANDO O USUARIO ESTÁ LOGADO
+      
         let wallet = document.querySelector("#wallet");
         if (userLogado) {
           wallet.setAttribute("style", "display: flex");
@@ -582,7 +579,7 @@ const App = {
             : false;
         }
 
-        //CASO O USUARIO ESTEJA LOGADO O POPUP DE COMPRA APARECE E PERMITE ELE COMPRAR.
+       
         if ((logado = userLogado)) {
           App.controllers.showPopupCompra();
 
@@ -594,7 +591,7 @@ const App = {
           });
           console.log("[-->]...", arr);
 
-          // APÓS CONFIRMAR A COMPRA CASO TENHA  DINHEIRO SUFICIENTE É EXIBIDA UMA MENSAGEM DE SUCESSO.
+        
           confirmar.onclick = () => {
             if (App.state.wallet.balance >= weapons.price) {
               cancelar.setAttribute("style", "display: none");
@@ -624,8 +621,7 @@ const App = {
                 confirmar.classList = "";
                 msgSuccess.classList = "";
                 msgSuccess.textContent = "";
-                window.location.reload(); //  <----  ESSE CAMARADA TA AQUI SÓ PRA RESETAR O ESTILO DOS BOTÕES DANDO UM RELOAD
-                // PQ OS BOTÕES POR ALGUM MOTIVO FICAM SEM ESTILO DEPOIS DE CONFIRMAR A PRIMEIRA COMPRA
+                window.location.reload(); 
               }, 5000);
             }
           };
@@ -897,7 +893,7 @@ const App = {
       els.appendChild(btn);
       return els;
     },
-    //RENDER DOS INTES ÉPICOS
+
     renderEpic() {
       const container = App.elements.body.epic;
 
@@ -913,7 +909,7 @@ const App = {
 
       const epic = document.getElementById("epicContaniner");
 
-      //BOTÃO QUE MOSTRA SOMENTE OS ITENS ÉPICOS E ESCONDE O RESTANTE, FUNCIONA COMO UM TIPO DE FILTRO.
+     
 
       showEpic.addEventListener("click", function () {
         if (epic.style.display === "none" || epic.style.display === "flex") {
@@ -945,7 +941,7 @@ const App = {
 
       console.log("Done");
     },
-    //RENDER DO PRIMEIRO ITEM MITICO
+   
     renderMiticCard() {
       const container1 = App.elements.body.container.el;
       console.log("Renderind Mitic...");
@@ -953,7 +949,7 @@ const App = {
 
       container1.style.order = "-1";
 
-      //BOTÃO QUE MOSTRA SOMENTE O PRIMEIRO ITEN MITICO E ESCONDE O RESTANTE, FUNCIONA COMO UM TIPO DE FILTRO.
+      
       var showMitic = document.getElementById("mitic-btn");
       showMitic.addEventListener("click", function () {
         const epic = document.getElementById("epicContaniner");
@@ -984,7 +980,7 @@ const App = {
         container1.appendChild(els);
       }
     },
-    //RENDER DOS INTES MITICOS
+   
     renderMiticCard2() {
       const container1 = App.elements.body.container;
 
@@ -1000,7 +996,7 @@ const App = {
         container1.allCards.push(els);
       }
     },
-    //RENDER DOS INTES LENDARIOS
+   
     renderLegend() {
       const container = App.elements.body.legend.el;
 
@@ -1035,7 +1031,7 @@ const App = {
         container.appendChild(els);
       }
     },
-    //RENDER DOS INTES RAROS
+   
     renderRare() {
       const container = App.elements.body.rare.el;
 
@@ -1068,7 +1064,7 @@ const App = {
         container.appendChild(els);
       }
     },
-    //RENDER DOS INTES COMUMS
+  
     renderCommum() {
       const container = App.elements.body.commum.el;
 
@@ -1169,9 +1165,7 @@ const App = {
         body.el.setAttribute("style", "justifyContent: flex-start");
       });
 
-      // BOTÃO QUE MOSTRA TODOS OS ITENS, E COMO BUGAVA A POSIÇÃO DOS ITENS QUANDO EU CLICAVA PARA VER TODOS,
-      //APÓS ALGUMAS TENTATIVAS SEM SUCESSO EU COLOQUEI UM WINDOW.LOCATION.RELOAD(), COM CERTEZA NÃO É A MELHOR DAS OPÇÕES
-      // MAS SERVIU DANDO UM RELOAD NA PÁGINA E VONTANDO TODOS OS ITENS PARA SUAS POSIÇÕES DE ORIGEM
+   
 
       var showAll = document.getElementById("all-btn");
       showAll.addEventListener("click", function () {
