@@ -4,7 +4,7 @@
 
 
 
-// ##### ALTERAR VER/ESCONDER SENHA ######         
+       
       let btn = document.querySelector('.fa-eye')
       btn.addEventListener('click', () => {
           let inputSenha = document.querySelector('#userSenha')
@@ -17,7 +17,7 @@
       
         })
 
-// ##### login, que vai pegar os dados do usuario no localStorage e faz uma comparação permitindo ou não o usuario prosseguir ####
+
 function entrar(){
   let usuario = document.querySelector('#userInput')
   let spanUsuario = document.querySelector('#spanUsuario')
@@ -124,7 +124,7 @@ function entrar(){
           
        
        
-//   ##### SENHA #######
+
         
 App.helpers.style(body.container.campoSenha.spanSenha, 
     {
