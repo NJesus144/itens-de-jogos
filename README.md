@@ -1,6 +1,6 @@
 <h1 align="center"> Site de vendas de itens para jogos</h1>
 
-<p> Esse projeto foi feito ao termino do primeiro módulo de um curso utilizando apenas Html, CSS e JavaScript sem nunhum tipo de framework. </p>
+<p> Esse projeto foi feito ao termino do primeiro módulo de um curso JavasCript  utilizando apenas Html, CSS e JavaScript. </p>
 
 <p align = "center">
 <a href="#sobre">Sobre</a> •
